@@ -29,7 +29,6 @@ function App(){
                     <IndexRoute component={Main}/>
                     <Route path='tv' component={Tv} />
                     <Route path='*' component={NotFound}></Route>
-
                 </Route>
             </Router>
 }
