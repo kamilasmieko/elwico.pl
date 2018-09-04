@@ -25,8 +25,7 @@ class Banner extends React.Component{
     }
     render(){
         return <div id='banner'
-                    className="slideshow-container"
-                    style={{height: '35rem'}}>
+                    className="slideshow-container">
 
                     {this.state.elements.map((el, i) => <div className="mySlides fade"
                                                        key={i}

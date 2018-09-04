@@ -21,6 +21,10 @@ import {
 import {MainTemplate} from "./maintemplate.jsx";
 import {Main} from "./main.jsx";
 import {Tv} from "./tv.jsx";
+import {Internet} from "./internet.jsx";
+import {Voip} from "./voip.jsx";
+import {News} from "./news.jsx";
+import {Contact} from "./contact.jsx";
 import {NotFound} from "./notfound.jsx";
 
 function App(){
@@ -28,6 +32,10 @@ function App(){
                 <Route path='/' component={MainTemplate}>
                     <IndexRoute component={Main}/>
                     <Route path='tv' component={Tv} />
+                    <Route path='internet' component={Internet} />
+                    <Route path='voip' component={Voip} />
+                    <Route path='news' component={News} />
+                    <Route path='contact' component={Contact} />
                     <Route path='*' component={NotFound}></Route>
                 </Route>
             </Router>
