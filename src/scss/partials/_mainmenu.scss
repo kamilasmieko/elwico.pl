@@ -5,15 +5,21 @@
   float: right;
   li{
     float: left;
-    padding: 9rem 4rem 0 0;
+    margin: 4.3rem 0;
     a{
+      transition: 0.4s;
       text-decoration: none;
       color: black;
+      padding: 0 3.3rem;
+      margin: 4.3rem 0;
       &.active{
         color: red;
       }
       &:hover{
-        color: red;
+        color: white;
+        background-color: #c0c7cf;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+        padding: 4.3rem 3.3rem;
       }
     }
   }
