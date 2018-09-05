@@ -25,6 +25,8 @@ import {Internet} from "./internet.jsx";
 import {Voip} from "./voip.jsx";
 import {News} from "./news.jsx";
 import {Contact} from "./contact.jsx";
+import {SubscriberSite} from "./subscribersite.jsx";
+import {Email} from "./email.jsx";
 import {NotFound} from "./notfound.jsx";
 
 function App(){
@@ -36,6 +38,8 @@ function App(){
                     <Route path='voip' component={Voip} />
                     <Route path='news' component={News} />
                     <Route path='contact' component={Contact} />
+                    <Route path='subscribersite' component={SubscriberSite} />
+                    <Route path='email' component={Email} />
                     <Route path='*' component={NotFound}></Route>
                 </Route>
             </Router>

@@ -11,7 +11,6 @@
 .slideshow-container {
   position: relative;
   margin: 0 auto;
-  //height: 60rem;
 }
 
 /* Hide the images by default */
@@ -21,16 +20,16 @@
 
 /* Next & previous buttons */
 .prev, .next {
+  transition: .7s ease;
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
+  padding: 4rem;
   color: white;
   font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
+  font-size: 4rem;
   border-radius: 0 3px 3px 0;
 }
 
@@ -42,7 +41,7 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.5);
 }
 
 /* Caption text - use it if banner has no text */
@@ -61,6 +60,22 @@
 //  text-align: right;
 //}
 
+/* The dots/bullets/indicators */
+.dot {
+  transition: background-color 0.7s ease;
+  cursor: pointer;
+  height: 1.7rem;
+  width: 1.7rem;
+  margin: 1.5rem .8rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -70,11 +85,11 @@
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  0% {opacity: .4}
+  100% {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  0% {opacity: .4}
+  100% {opacity: 1}
 }
